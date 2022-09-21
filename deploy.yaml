@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: fjv-finalapp
+  name: fjv-finalapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fjv-finalapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: fjv-finalapp
+    spec:
+      containers:
+      - image: fveloso86/fjvmobiwebapp:v7
+        name: fjvmobiwebapp
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
