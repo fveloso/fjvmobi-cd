@@ -12,7 +12,7 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: fjvlb666
-  type: fjv-finalapp
+    app: fjv-finalapp
+  type: NodePort
 status:
   loadBalancer: {}
